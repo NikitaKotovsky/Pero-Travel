@@ -1,0 +1,387 @@
+<html lang="ru">
+    <head>
+        <title>Pero Travel</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/excursion_style.css" rel="stylesheet">
+        <link href="css/adaptive.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+          <div class="container-width">
+            <div class="container">
+                <div class="header--inner">
+                    <div class="header--icon">
+                      <img alt="logo" src="img/logo.png">
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav--menu">
+                            <li><a href="index.html" class="nav--link">Главная</a></li>
+                            <li><a href="excursion.hrml" class="nav--link">Экскурсии</a></li>
+                            <li><a href="view.html" class="nav--link">Личный кабинет</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+          </div>
+        </header>
+        <div class="intro-ex">
+            <div class="intro--img"></div>
+            <div class="container">
+              <div class="container-width">
+                <div class="into__title">
+                  <h1>Наши экскурсии</h1>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="wrapper">
+        <div class="container">
+          <div class="container-width">
+            <section class="table">
+              <div class="table-wrap">
+                <div class="table__choose">
+                  <div class="choose--content">
+                    <h3 class="choose__text">Автобусный тур</h3>
+                    <h3 class="choose__text">Джиппинг</h3>
+                    <h3 class="choose__text">Яхтинг</h3>
+                    <h3 class="choose__text">Каньонинг</h3>
+                  </div>
+                  <div class="choose-progress">
+                    <progress value="0" max="100" class="table-progress">0%</progress>
+                  </div>
+                </div>
+                <div class="table__info">
+                  <div class="info__elem">
+                    <p>Абхазия</p>
+                    <img src="img/sign.svg" alt="">
+                  </div>
+                  <div class="info__elem">
+                    <p>10 ноября 2021</p>
+                    <img src="img/calendarIcon.svg" alt="calendar">
+                  </div>
+                  <div class="info__elem">
+                    <p>5 человек</p>
+                    <img src="img/people.svg" alt="people">
+                  </div>
+                  <button type="button" name="button" class="button table-button">Показать</button>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="container">
+            <div class="flex-container">
+                <section class="filter">
+                  <div class="filter-wrap">
+                    <h4>Фильтры</h4>
+                    <div class="filtet__costing">
+                      <div class="filter__title">
+                        <h3 class="filter-name">Стоимость</h3>
+                        <img src="img/minus.svg" alt="minus" class="filter-minus filter-sign">
+                      </div>
+                      <div class="filter__count-block">
+                        <input type="text" placeholder="1600" class="filter__count">
+                        <input type="text" placeholder="4000"class="filter__count">
+                      </div>
+                      <input class="filter-range" type="range" name="range" value="1600" min="1" max="10000">
+                      <div class="filter-line"></div>
+                    </div>
+
+                    <div class="filter__count-people">
+                      <div class="filter__title">
+                        <h3 class="filter-name">Количество человек</h3>
+                        <img class="filter-minus filter-sign" src="img/minus.svg" alt="minus">
+                      </div>
+                      <div class="grid__count-people">
+                        <button type="button" class="count-people-item"><p>1 чел.</p></button>
+                        <button type="button" class="count-people-item"><p>2 чел.</p></button>
+                        <button type="button" class="count-people-item"><p>3 чел.</p></button>
+                        <button type="button" class="count-people-item"><p>4 чел.</p></button>
+                        <button type="button" class="count-people-item"><p>5 чел.</p></button>
+                        <button type="button" class="count-people-item"><p>6 чел.</p></button>
+                        <button type="button" class="count-people-item"><p>7 чел.</p></button>
+                        <button type="button" class="count-people-item"><p>8 чел.</p></button>
+                        <button type="button" class="count-people-item"><p>9 чел.</p></button>
+                        <button type="button" class="count-people-item"><p>10 чел.</p></button>
+                        <div class="count-people-item"><p>Больше 10 чел.</p></div>
+                      </div>
+                      <div class="filter-line"></div>
+                    </div>
+
+                    <div class="filter__place">
+                      <div class="filter__title">
+                        <h3 class="filter-name">Место</h3>
+                        <img src="img/minus.svg" alt="minus" class="filter-minus filter-sign">
+                      </div>
+                      <ul class="place-radio">
+                        <input type="radio" class="custom-checkbox" id="place-radio" name="place-radio" value="yes">
+                        <label for="place-radio">Абхазия</label>
+                        <input type="radio" class="custom-checkbox" id="place-radio" name="place-radio" value="yes">
+                        <label for="place-radio">Красная поляна</label>
+                        <input type="radio"class="custom-checkbox"  id="place-radio" name="place-radio" value="yes">
+                        <label for="place-radio">Сочи</label>
+                        <input type="radio" class="custom-checkbox" id="place-radio" name="place-radio" value="yes">
+                        <label for="place-radio">Адлер</label>
+                        <input type="radio" class="custom-checkbox" id="place-radio" name="place-radio" value="yes">
+                        <label for="place-radio">Байкал</label>
+                      </ul>
+                      <div class="filter-line"></div>
+                    </div>
+
+                    <div class="filter__more">
+                      <div class="filter__title">
+                        <h3 class="filter-name">Длительность</h3>
+                        <img src="img/plus.svg" alt="plus" class="filter-plus filter-sign">
+                      </div>
+                      <div class="filter-line"></div>
+                    </div>
+                    <div class="filter__date">
+                      <div class="filter__title">
+                        <h3 class="filter-name">Дата</h3>
+                        <img src="img/plus.svg" alt="plus" class="filter-plus filter-sign">
+                      </div>
+                      <div class="filter-line"></div>
+                    </div>
+                    <div class="filter__end">
+                      <button type="button" name="button" class="button filter-button">Показать</button>
+                      <span class="filter__clear">
+                        <img class="end-clear" src="img/clear.svg" alt="">
+                        <p>Сбросить фильтры</p>
+                      </span>
+                    </div>
+                  </div>
+                </section>
+                <section class="tours">
+                  <div class="tours-wrap">
+                    <h2 class="tours-title">Наши туры</h2>
+                      <div class="tours__flex">
+                          <div class="tours__item">
+                            <div class="item__img">
+                              <img src="img/ocean.png" alt="ocean">
+                            </div>
+                            <div class="item__content">
+                              <div class="item__titles">
+                                <p>Автобусный тур</p>
+                                <h4 class="titles-main">Золотое кольцо Абхазии (из Адлера)</h4>
+                              </div>
+                              <div class="item__descr">
+                                <div class="descr__item">
+                                  <span class="descr__cost">
+                                    <img src="img/costs.svg" alt="">
+                                    <p>1 618 ₽</p>
+                                  </span>
+                                  <p class="descr-whom">Взрослый билет</p>
+                                </div>
+                                <div class="descr__item">
+                                  <span class="descr__cost">
+                                    <img class="g" src="img/costs.svg" alt="">
+                                    <p>1 412 ₽</p>
+                                  </span>
+                                  <p class="descr-whom">Детский билет</p>
+                                </div>
+                                <div class="descr__item">
+                                  <span class="descr__cost">
+                                    <img src="img/time.svg" alt="">
+                                    <p>2,5 часа</p>
+                                  </span>
+                                </div>
+
+                              </div>
+                              <div class="item__text">
+                                <img class="blue-line" src="img/blue-line.svg" alt="">
+                                <div class="item-text">
+                                  Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...
+                                </div>
+                              </div>
+                              <div class="item__end">
+                                <button type="button" name="button" class="button item-button">Подробнее</button>
+                                <img src="img/like.svg" alt="" class="item-like">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tours__item">
+                            <div class="item__img">
+                              <img src="img/ocean.png" alt="ocean">
+                            </div>
+                            <div class="item__content">
+                              <div class="item__titles">
+                                <p>Автобусный тур</p>
+                                <h4 class="titles-main">Золотое кольцо Абхазии (из Адлера)</h4>
+                              </div>
+                              <div class="item__descr">
+                                <div class="descr__item">
+                                  <span class="descr__cost">
+                                    <img src="img/costs.svg" alt="">
+                                    <p>1 618 ₽</p>
+                                  </span>
+                                  <p class="descr-whom">Взрослый билет</p>
+                                </div>
+                                <div class="descr__item">
+                                  <span class="descr__cost">
+                                    <img class="g" src="img/costs.svg" alt="">
+                                    <p>1 412 ₽</p>
+                                  </span>
+                                  <p class="descr-whom">Детский билет</p>
+                                </div>
+                                <div class="descr__item">
+                                  <span class="descr__cost">
+                                    <img src="img/time.svg" alt="">
+                                    <p>2,5 часа</p>
+                                  </span>
+                                </div>
+
+                              </div>
+                              <div class="item__text">
+                                <img class="blue-line" src="img/blue-line.svg" alt="">
+                                <div class="item-text">
+                                  Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...
+                                </div>
+                              </div>
+                              <div class="item__end">
+                                <button type="button" name="button" class="button item-button">Подробнее</button>
+                                <img src="img/like.svg" alt="" class="item-like">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tours__item">
+                            <div class="item__img">
+                              <img src="img/ocean.png" alt="ocean">
+                            </div>
+                            <div class="item__content">
+                              <div class="item__titles">
+                                <p>Автобусный тур</p>
+                                <h4 class="titles-main">Золотое кольцо Абхазии (из Адлера)</h4>
+                              </div>
+                              <div class="item__descr">
+                                <div class="descr__item">
+                                  <span class="descr__cost">
+                                    <img src="img/costs.svg" alt="">
+                                    <p>1 618 ₽</p>
+                                  </span>
+                                  <p class="descr-whom">Взрослый билет</p>
+                                </div>
+                                <div class="descr__item">
+                                  <span class="descr__cost">
+                                    <img class="g" src="img/costs.svg" alt="">
+                                    <p>1 412 ₽</p>
+                                  </span>
+                                  <p class="descr-whom">Детский билет</p>
+                                </div>
+                                <div class="descr__item">
+                                  <span class="descr__cost">
+                                    <img src="img/time.svg" alt="">
+                                    <p>2,5 часа</p>
+                                  </span>
+                                </div>
+
+                              </div>
+                              <div class="item__text">
+                                <img class="blue-line" src="img/blue-line.svg" alt="">
+                                <div class="item-text">
+                                  Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...
+                                </div>
+                              </div>
+                              <div class="item__end">
+                                <button type="button" name="button" class="button item-button">Подробнее</button>
+                                <img src="img/like.svg" alt="" class="item-like">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tours__item">
+                            <div class="item__img">
+                              <img src="img/ocean.png" alt="ocean">
+                            </div>
+                            <div class="item__content">
+                              <div class="item__titles">
+                                <p>Автобусный тур</p>
+                                <h4 class="titles-main">Золотое кольцо Абхазии (из Адлера)</h4>
+                              </div>
+                              <div class="item__descr">
+                                <div class="descr__item">
+                                  <span class="descr__cost">
+                                    <img src="img/costs.svg" alt="">
+                                    <p>1 618 ₽</p>
+                                  </span>
+                                  <p class="descr-whom">Взрослый билет</p>
+                                </div>
+                                <div class="descr__item">
+                                  <span class="descr__cost">
+                                    <img class="g" src="img/costs.svg" alt="">
+                                    <p>1 412 ₽</p>
+                                  </span>
+                                  <p class="descr-whom">Детский билет</p>
+                                </div>
+                                <div class="descr__item">
+                                  <span class="descr__cost">
+                                    <img src="img/time.svg" alt="">
+                                    <p>2,5 часа</p>
+                                  </span>
+                                </div>
+
+                              </div>
+                              <div class="item__text">
+                                <img class="blue-line" src="img/blue-line.svg" alt="">
+                                <div class="item-text">
+                                  Вас ждет путешествие по "Золотому Кольцу Абхазии" на Мерседес Спринтер (20 мест). По маршруту вас будет сопровождать профессиональный гид. Посадка на экскурсию осуществляется с вашего отеля или ближайшей автобусной остановки. Пересечение границы без пересадок...
+                                </div>
+                              </div>
+                              <div class="item__end">
+                                <button type="button" name="button" class="button item-button">Подробнее</button>
+                                <img src="img/like.svg" alt="" class="item-like">
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </section>
+              </div>
+          </div>
+          <footer id="footer">
+            <div class="container">
+              <div class="container-width">
+                <div class="footer-wrap">
+                  <div class="footer-logo">
+                      <img src="img/logo_color.svg" alt="logo">
+                  </div>
+                  <nav class="nav nav-footer">
+                    <ul class="menu-footer">
+                          <li><a href="index.html" class="link-footer">Главная</a></li>
+                          <li><a href="excursion.html" class="link-footer">Экскурсии</a></li>
+                          <li><a href="view.html" class="link-footer">Личный кабинет</a></li>
+                      </ul>
+                  </nav>
+                  <div class="footer--numbers">
+                      <div class="numbers-item">
+                        <img class="footer-icon" src="img/telegram.png">
+                        <p>+7 964 944 18 74<p>
+                      </div>
+                      <div class="numbers-item">
+                        <img class="footer-icon" src="img/telegram.png">
+                        <p>+7 964 944 18 74</p>
+                      </div>
+                      <div class="numbers-item">
+                        <img class="footer-icon" src="img/telegram.png">
+                        <p>Телеграм-бот PeroTravel</p>
+                      </div>
+                  </div>
+                  <div class="footer--socials">
+                      <div div class="socials-mail">
+                          <img class="footer-icon" src="img/telegram.png">
+                          <p>office@perotravel.ru</p>
+                      </div>
+                      <div class="socials--item">
+                          <div class="footer-icon"><img src="img/vk-color.png"></div>
+                          <div class="footer-icon"><img src="img/inst-color.png"></div>
+                          <div class="footer-icon"><img src="img/facebook%201.png"></div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+  </body>
+</html>
